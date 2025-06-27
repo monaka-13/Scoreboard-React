@@ -2,7 +2,7 @@ const Header = (props) => {
   return (
     <header>
       <h1>Scoreboard</h1>
-      <span className="stats">players: {props.players}</span>
+      <span className="stats">Players: {props.players}</span>
     </header>
   );
 }
