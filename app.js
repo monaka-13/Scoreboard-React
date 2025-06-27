@@ -54,10 +54,9 @@ class App extends React.Component {
     return (
       <div>
         <Header playersNumber={this.state.players.length} />
-        <Player player={this.state.players[0]} />
-        <Player player={this.state.players[1]} />
-        <Player player={this.state.players[2]} />
-        <Player player={this.state.players[3]} />
+        {this.state.players.map(player =>
+          <Player player={player} key={player.id.toString()} />
+        )}
       </div>
     );
   }
